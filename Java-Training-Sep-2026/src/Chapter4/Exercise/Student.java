@@ -52,23 +52,25 @@ public class Student {
     }
 
     public static String determineGrade(double testMark){
+        String result;
         if(testMark >= 0 && testMark < 40){
-            return "F";
+            result = "F";
         }else if(40 <= testMark && testMark <= 49){
-             return "D-";
+            result = "D-";
         }else if(50 <= testMark && testMark <= 59){
-            return "D";
+            result = "D";
         }else if(60 <= testMark && testMark <= 69){
-            return "C";
+            result = "C";
         }else if(70 <= testMark && testMark <= 79){
-            return "B";
+            result = "B";
         }else if(80 <= testMark && testMark <= 89){
-            return "A";
+            result = "A";
         }else if(testMark >= 90){
-            return "A+";
+            result = "A+";
         }else{
-            return "Invalid Test Mark entered";
+            result = "Invalid Test Mark entered";
         }
+        return result;
     }
 
     public static int determineAge(int year){
